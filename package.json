@@ -1,0 +1,22 @@
+{
+  "name": "ts-starter",
+  "version": "0.0.1",
+  "description": "Typescript starter boilerplate",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc",
+    "test": "jest",
+    "test:pkg": "npm run build && node package-test.mjs"
+  },
+  "author": "Jiebin Su",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4"
+  }
+}
